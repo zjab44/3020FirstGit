@@ -8,21 +8,21 @@
  */
 class Location {
 
-    private $location_id,
+    private $locationId,
         $state,
         $county,
         $city,
         $zip;
 
     /**
-     * @param $location_id
+     * @param $locationId
      * @param $state
      * @param $county
      * @param $city
      * @param $zip
      */
-    function __construct($location_id, $state, $county, $city, $zip) {
-        $this->location_id = $location_id;
+    function __construct($locationId, $state, $county, $city, $zip) {
+        $this->locationId = $locationId;
         $this->state = $state;
         $this->county = $county;
         $this->city = $city;
@@ -33,14 +33,14 @@ class Location {
      * @return mixed
      */
     public function getLocationId() {
-        return $this->location_id;
+        return $this->locationId;
     }
 
     /**
-     * @param mixed $location_id
+     * @param mixed $locationId
      */
-    public function setLocationId($location_id) {
-        $this->location_id = $location_id;
+    public function setLocationId($locationId) {
+        $this->locationId = $locationId;
     }
 
     /**

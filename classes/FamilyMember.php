@@ -8,48 +8,48 @@
  */
 class FamilyMember {
 
-    private $member_id,
+    private $memberId,
         $relationship,
-        $first_name,
-        $middle_name,
-        $last_name,
-        $date_of_birth,
-        $date_of_death,
-        $deceased_id;
+        $firstName,
+        $middleName,
+        $lastName,
+        $dateOfBirth,
+        $dateOfDeath,
+        $deceasedId;
 
     /**
-     * @param $member_id
+     * @param $memberId
      * @param $relationship
-     * @param $first_name
-     * @param $middle_name
-     * @param $last_name
-     * @param $date_of_birth
-     * @param $date_of_death
-     * @param $deceased_id
+     * @param $firstName
+     * @param $middleName
+     * @param $lastName
+     * @param $dateOfBirth
+     * @param $dateOfDeath
+     * @param $deceasedId
      */
-    function __construct($member_id, $relationship, $first_name, $middle_name, $last_name, $date_of_birth, $date_of_death, $deceased_id) {
-        $this->member_id = $member_id;
+    function __construct($memberId, $relationship, $firstName, $middleName, $lastName, $dateOfBirth, $dateOfDeath, $deceasedId) {
+        $this->memberId = $memberId;
         $this->relationship = $relationship;
-        $this->first_name = $first_name;
-        $this->middle_name = $middle_name;
-        $this->last_name = $last_name;
-        $this->date_of_birth = $date_of_birth;
-        $this->date_of_death = $date_of_death;
-        $this->deceased_id = $deceased_id;
+        $this->firstName = $firstName;
+        $this->middleName = $middleName;
+        $this->lastName = $lastName;
+        $this->dateOfBirth = $dateOfBirth;
+        $this->dateOfDeath = $dateOfDeath;
+        $this->deceasedId = $deceasedId;
     }
 
     /**
      * @return mixed
      */
     public function getMemberId() {
-        return $this->member_id;
+        return $this->memberId;
     }
 
     /**
-     * @param mixed $member_id
+     * @param mixed $memberId
      */
-    public function setMemberId($member_id) {
-        $this->member_id = $member_id;
+    public function setMemberId($memberId) {
+        $this->memberId = $memberId;
     }
 
     /**
@@ -70,84 +70,84 @@ class FamilyMember {
      * @return mixed
      */
     public function getFirstName() {
-        return $this->first_name;
+        return $this->firstName;
     }
 
     /**
-     * @param mixed $first_name
+     * @param mixed $firstName
      */
-    public function setFirstName($first_name) {
-        $this->first_name = $first_name;
+    public function setFirstName($firstName) {
+        $this->firstName = $firstName;
     }
 
     /**
      * @return mixed
      */
     public function getMiddleName() {
-        return $this->middle_name;
+        return $this->middleName;
     }
 
     /**
-     * @param mixed $middle_name
+     * @param mixed $middleName
      */
-    public function setMiddleName($middle_name) {
-        $this->middle_name = $middle_name;
+    public function setMiddleName($middleName) {
+        $this->middleName = $middleName;
     }
 
     /**
      * @return mixed
      */
     public function getLastName() {
-        return $this->last_name;
+        return $this->lastName;
     }
 
     /**
-     * @param mixed $last_name
+     * @param mixed $lastName
      */
-    public function setLastName($last_name) {
-        $this->last_name = $last_name;
+    public function setLastName($lastName) {
+        $this->lastName = $lastName;
     }
 
     /**
      * @return mixed
      */
     public function getDateOfBirth() {
-        return $this->date_of_birth;
+        return $this->dateOfBirth;
     }
 
     /**
-     * @param mixed $date_of_birth
+     * @param mixed $dateOfBirth
      */
-    public function setDateOfBirth($date_of_birth) {
-        $this->date_of_birth = $date_of_birth;
+    public function setDateOfBirth($dateOfBirth) {
+        $this->dateOfBirth = $dateOfBirth;
     }
 
     /**
      * @return mixed
      */
     public function getDateOfDeath() {
-        return $this->date_of_death;
+        return $this->dateOfDeath;
     }
 
     /**
-     * @param mixed $date_of_death
+     * @param mixed $dateOfDeath
      */
-    public function setDateOfDeath($date_of_death) {
-        $this->date_of_death = $date_of_death;
+    public function setDateOfDeath($dateOfDeath) {
+        $this->dateOfDeath = $dateOfDeath;
     }
 
     /**
      * @return mixed
      */
     public function getDeceasedId() {
-        return $this->deceased_id;
+        return $this->deceasedId;
     }
 
     /**
-     * @param mixed $deceased_id
+     * @param mixed $deceasedId
      */
-    public function setDeceasedId($deceased_id) {
-        $this->deceased_id = $deceased_id;
+    public function setDeceasedId($deceasedId) {
+        $this->deceasedId = $deceasedId;
     }
 
 }

@@ -8,231 +8,231 @@
  */
 class Deceased {
 
-    private $deceased_id,
-        $first_name,
-        $middle_name,
-        $last_name,
-        $date_of_birth,
-        $date_of_death,
-        $row_number,
-        $location_within_row,
-        $stone_description,
-        $type_of_burial,
-        $marker_text,
-        $marker_symbols,
-        $cemetery_id;
+    private $deceasedId,
+        $firstName,
+        $middleName,
+        $lastName,
+        $dateOfBirth,
+        $dateOfDeath,
+        $rowNumber,
+        $locationWithinRow,
+        $stoneDescription,
+        $typeOfBurial,
+        $markerText,
+        $markerSymbols,
+        $cemeteryId;
 
     /**
-     * @param $deceased_id
-     * @param $first_name
-     * @param $middle_name
-     * @param $last_name
-     * @param $date_of_birth
-     * @param $date_of_death
-     * @param $row_number
-     * @param $location_within_row
-     * @param $stone_description
-     * @param $type_of_burial
-     * @param $marker_text
-     * @param $marker_symbols
-     * @param $cemetery_id
+     * @param $deceasedId
+     * @param $firstName
+     * @param $middleName
+     * @param $lastName
+     * @param $dateOfBirth
+     * @param $dateOfDeath
+     * @param $rowNumber
+     * @param $locationWithinRow
+     * @param $stoneDescription
+     * @param $typeOfBurial
+     * @param $markerText
+     * @param $markerSymbols
+     * @param $cemeteryId
      */
-    function __construct($deceased_id, $first_name, $middle_name, $last_name, $date_of_birth, $date_of_death, $row_number, $location_within_row, $stone_description, $type_of_burial, $marker_text, $marker_symbols, $cemetery_id) {
-        $this->deceased_id = $deceased_id;
-        $this->first_name = $first_name;
-        $this->middle_name = $middle_name;
-        $this->last_name = $last_name;
-        $this->date_of_birth = $date_of_birth;
-        $this->date_of_death = $date_of_death;
-        $this->row_number = $row_number;
-        $this->location_within_row = $location_within_row;
-        $this->stone_description = $stone_description;
-        $this->type_of_burial = $type_of_burial;
-        $this->marker_text = $marker_text;
-        $this->marker_symbols = $marker_symbols;
-        $this->cemetery_id = $cemetery_id;
+    function __construct($deceasedId, $firstName, $middleName, $lastName, $dateOfBirth, $dateOfDeath, $rowNumber, $locationWithinRow, $stoneDescription, $typeOfBurial, $markerText, $markerSymbols, $cemeteryId) {
+        $this->deceasedId = $deceasedId;
+        $this->firstName = $firstName;
+        $this->middleName = $middleName;
+        $this->lastName = $lastName;
+        $this->dateOfBirth = $dateOfBirth;
+        $this->dateOfDeath = $dateOfDeath;
+        $this->rowNumber = $rowNumber;
+        $this->locationWithinRow = $locationWithinRow;
+        $this->stoneDescription = $stoneDescription;
+        $this->typeOfBurial = $typeOfBurial;
+        $this->markerText = $markerText;
+        $this->markerSymbols = $markerSymbols;
+        $this->cemeteryId = $cemeteryId;
     }
 
     /**
      * @return mixed
      */
     public function getDeceasedId() {
-        return $this->deceased_id;
+        return $this->deceasedId;
     }
 
     /**
-     * @param mixed $deceased_id
+     * @param mixed $deceasedId
      */
-    public function setDeceasedId($deceased_id) {
-        $this->deceased_id = $deceased_id;
+    public function setDeceasedId($deceasedId) {
+        $this->deceasedId = $deceasedId;
     }
 
     /**
      * @return mixed
      */
     public function getFirstName() {
-        return $this->first_name;
+        return $this->firstName;
     }
 
     /**
-     * @param mixed $first_name
+     * @param mixed $firstName
      */
-    public function setFirstName($first_name) {
-        $this->first_name = $first_name;
+    public function setFirstName($firstName) {
+        $this->firstName = $firstName;
     }
 
     /**
      * @return mixed
      */
     public function getMiddleName() {
-        return $this->middle_name;
+        return $this->middleName;
     }
 
     /**
-     * @param mixed $middle_name
+     * @param mixed $middleName
      */
-    public function setMiddleName($middle_name) {
-        $this->middle_name = $middle_name;
+    public function setMiddleName($middleName) {
+        $this->middleName = $middleName;
     }
 
     /**
      * @return mixed
      */
     public function getLastName() {
-        return $this->last_name;
+        return $this->lastName;
     }
 
     /**
-     * @param mixed $last_name
+     * @param mixed $lastName
      */
-    public function setLastName($last_name) {
-        $this->last_name = $last_name;
+    public function setLastName($lastName) {
+        $this->lastName = $lastName;
     }
 
     /**
      * @return mixed
      */
     public function getDateOfBirth() {
-        return $this->date_of_birth;
+        return $this->dateOfBirth;
     }
 
     /**
-     * @param mixed $date_of_birth
+     * @param mixed $dateOfBirth
      */
-    public function setDateOfBirth($date_of_birth) {
-        $this->date_of_birth = $date_of_birth;
+    public function setDateOfBirth($dateOfBirth) {
+        $this->dateOfBirth = $dateOfBirth;
     }
 
     /**
      * @return mixed
      */
     public function getDateOfDeath() {
-        return $this->date_of_death;
+        return $this->dateOfDeath;
     }
 
     /**
-     * @param mixed $date_of_death
+     * @param mixed $dateOfDeath
      */
-    public function setDateOfDeath($date_of_death) {
-        $this->date_of_death = $date_of_death;
+    public function setDateOfDeath($dateOfDeath) {
+        $this->dateOfDeath = $dateOfDeath;
     }
 
     /**
      * @return mixed
      */
     public function getRowNumber() {
-        return $this->row_number;
+        return $this->rowNumber;
     }
 
     /**
-     * @param mixed $row_number
+     * @param mixed $rowNumber
      */
-    public function setRowNumber($row_number) {
-        $this->row_number = $row_number;
+    public function setRowNumber($rowNumber) {
+        $this->rowNumber = $rowNumber;
     }
 
     /**
      * @return mixed
      */
     public function getLocationWithinRow() {
-        return $this->location_within_row;
+        return $this->locationWithinRow;
     }
 
     /**
-     * @param mixed $location_within_row
+     * @param mixed $locationWithinRow
      */
-    public function setLocationWithinRow($location_within_row) {
-        $this->location_within_row = $location_within_row;
+    public function setLocationWithinRow($locationWithinRow) {
+        $this->locationWithinRow = $locationWithinRow;
     }
 
     /**
      * @return mixed
      */
     public function getStoneDescription() {
-        return $this->stone_description;
+        return $this->stoneDescription;
     }
 
     /**
-     * @param mixed $stone_description
+     * @param mixed $stoneDescription
      */
-    public function setStoneDescription($stone_description) {
-        $this->stone_description = $stone_description;
+    public function setStoneDescription($stoneDescription) {
+        $this->stoneDescription = $stoneDescription;
     }
 
     /**
      * @return mixed
      */
     public function getTypeOfBurial() {
-        return $this->type_of_burial;
+        return $this->typeOfBurial;
     }
 
     /**
-     * @param mixed $type_of_burial
+     * @param mixed $typeOfBurial
      */
-    public function setTypeOfBurial($type_of_burial) {
-        $this->type_of_burial = $type_of_burial;
+    public function setTypeOfBurial($typeOfBurial) {
+        $this->typeOfBurial = $typeOfBurial;
     }
 
     /**
      * @return mixed
      */
     public function getMarkerText() {
-        return $this->marker_text;
+        return $this->markerText;
     }
 
     /**
-     * @param mixed $marker_text
+     * @param mixed $markerText
      */
-    public function setMarkerText($marker_text) {
-        $this->marker_text = $marker_text;
+    public function setMarkerText($markerText) {
+        $this->markerText = $markerText;
     }
 
     /**
      * @return mixed
      */
     public function getMarkerSymbols() {
-        return $this->marker_symbols;
+        return $this->markerSymbols;
     }
 
     /**
-     * @param mixed $marker_symbols
+     * @param mixed $markerSymbols
      */
-    public function setMarkerSymbols($marker_symbols) {
-        $this->marker_symbols = $marker_symbols;
+    public function setMarkerSymbols($markerSymbols) {
+        $this->markerSymbols = $markerSymbols;
     }
 
     /**
      * @return mixed
      */
     public function getCemeteryId() {
-        return $this->cemetery_id;
+        return $this->cemeteryId;
     }
 
     /**
-     * @param mixed $cemetery_id
+     * @param mixed $cemeteryId
      */
-    public function setCemeteryId($cemetery_id) {
-        $this->cemetery_id = $cemetery_id;
+    public function setCemeteryId($cemeteryId) {
+        $this->cemeteryId = $cemeteryId;
     }
 
 }

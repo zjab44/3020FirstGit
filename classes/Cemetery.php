@@ -8,62 +8,62 @@
  */
 class Cemetery {
 
-    private $cemetery_id,
-        $cemetery_name,
+    private $cemeteryId,
+        $cemeteryName,
         $street1,
         $street2,
-        $gps_coordinates,
-        $date_established,
-        $cemetery_notes,
-        $location_id;
+        $gpsCoordinates,
+        $dateEstablished,
+        $cemeteryNotes,
+        $locationId;
 
     /**
-     * @param $cemetery_id
-     * @param $cemetery_name
+     * @param $cemeteryId
+     * @param $cemeteryName
      * @param $street1
      * @param $street2
-     * @param $gps_coordinates
-     * @param $date_established
-     * @param $cemetery_notes
-     * @param $location_id
+     * @param $gpsCoordinates
+     * @param $dateEstablished
+     * @param $cemeteryNotes
+     * @param $locationId
      */
-    function __construct($cemetery_id, $cemetery_name, $street1, $street2, $gps_coordinates, $date_established, $cemetery_notes, $location_id) {
-        $this->cemetery_id = $cemetery_id;
-        $this->cemetery_name = $cemetery_name;
+    function __construct($cemeteryId, $cemeteryName, $street1, $street2, $gpsCoordinates, $dateEstablished, $cemeteryNotes, $locationId) {
+        $this->cemeteryId = $cemeteryId;
+        $this->cemeteryName = $cemeteryName;
         $this->street1 = $street1;
         $this->street2 = $street2;
-        $this->gps_coordinates = $gps_coordinates;
-        $this->date_established = $date_established;
-        $this->cemetery_notes = $cemetery_notes;
-        $this->location_id = $location_id;
+        $this->gpsCoordinates = $gpsCoordinates;
+        $this->dateEstablished = $dateEstablished;
+        $this->cemeteryNotes = $cemeteryNotes;
+        $this->locationId = $locationId;
     }
 
     /**
      * @return mixed
      */
     public function getCemeteryId() {
-        return $this->cemetery_id;
+        return $this->cemeteryId;
     }
 
     /**
-     * @param mixed $cemetery_id
+     * @param mixed $cemeteryId
      */
-    public function setCemeteryId($cemetery_id) {
-        $this->cemetery_id = $cemetery_id;
+    public function setCemeteryId($cemeteryId) {
+        $this->cemeteryId = $cemeteryId;
     }
 
     /**
      * @return mixed
      */
     public function getCemeteryName() {
-        return $this->cemetery_name;
+        return $this->cemeteryName;
     }
 
     /**
-     * @param mixed $cemetery_name
+     * @param mixed $cemeteryName
      */
-    public function setCemeteryName($cemetery_name) {
-        $this->cemetery_name = $cemetery_name;
+    public function setCemeteryName($cemeteryName) {
+        $this->cemeteryName = $cemeteryName;
     }
 
     /**
@@ -98,56 +98,56 @@ class Cemetery {
      * @return mixed
      */
     public function getGpsCoordinates() {
-        return $this->gps_coordinates;
+        return $this->gpsCoordinates;
     }
 
     /**
-     * @param mixed $gps_coordinates
+     * @param mixed $gpsCoordinates
      */
-    public function setGpsCoordinates($gps_coordinates) {
-        $this->gps_coordinates = $gps_coordinates;
+    public function setGpsCoordinates($gpsCoordinates) {
+        $this->gpsCoordinates = $gpsCoordinates;
     }
 
     /**
      * @return mixed
      */
     public function getDateEstablished() {
-        return $this->date_established;
+        return $this->dateEstablished;
     }
 
     /**
-     * @param mixed $date_established
+     * @param mixed $dateEstablished
      */
-    public function setDateEstablished($date_established) {
-        $this->date_established = $date_established;
+    public function setDateEstablished($dateEstablished) {
+        $this->dateEstablished = $dateEstablished;
     }
 
     /**
      * @return mixed
      */
     public function getCemeteryNotes() {
-        return $this->cemetery_notes;
+        return $this->cemeteryNotes;
     }
 
     /**
-     * @param mixed $cemetery_notes
+     * @param mixed $cemeteryNotes
      */
-    public function setCemeteryNotes($cemetery_notes) {
-        $this->cemetery_notes = $cemetery_notes;
+    public function setCemeteryNotes($cemeteryNotes) {
+        $this->cemeteryNotes = $cemeteryNotes;
     }
 
     /**
      * @return mixed
      */
     public function getLocationId() {
-        return $this->location_id;
+        return $this->locationId;
     }
 
     /**
-     * @param mixed $location_id
+     * @param mixed $locationId
      */
-    public function setLocationId($location_id) {
-        $this->location_id = $location_id;
+    public function setLocationId($locationId) {
+        $this->locationId = $locationId;
     }
 
 }

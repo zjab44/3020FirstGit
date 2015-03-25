@@ -8,56 +8,56 @@
  */
 class Record {
 
-    private $record_id,
-        $record_type,
+    private $recordId,
+        $recordType,
         $record,
-        $date_entered,
-        $entered_by,
-        $deceased_id;
+        $dateEntered,
+        $enteredBy,
+        $deceasedId;
 
     /**
-     * @param $record_id
-     * @param $record_type
+     * @param $recordId
+     * @param $recordType
      * @param $record
-     * @param $date_entered
-     * @param $entered_by
-     * @param $deceased_id
+     * @param $dateEntered
+     * @param $enteredBy
+     * @param $deceasedId
      */
-    function __construct($record_id, $record_type, $record, $date_entered, $entered_by, $deceased_id) {
-        $this->record_id = $record_id;
-        $this->record_type = $record_type;
+    function __construct($recordId, $recordType, $record, $dateEntered, $enteredBy, $deceasedId) {
+        $this->recordId = $recordId;
+        $this->recordType = $recordType;
         $this->record = $record;
-        $this->date_entered = $date_entered;
-        $this->entered_by = $entered_by;
-        $this->deceased_id = $deceased_id;
+        $this->dateEntered = $dateEntered;
+        $this->enteredBy = $enteredBy;
+        $this->deceasedId = $deceasedId;
     }
 
     /**
      * @return mixed
      */
     public function getRecordId() {
-        return $this->record_id;
+        return $this->recordId;
     }
 
     /**
-     * @param mixed $record_id
+     * @param mixed $recordId
      */
-    public function setRecordId($record_id) {
-        $this->record_id = $record_id;
+    public function setRecordId($recordId) {
+        $this->recordId = $recordId;
     }
 
     /**
      * @return mixed
      */
     public function getRecordType() {
-        return $this->record_type;
+        return $this->recordType;
     }
 
     /**
-     * @param mixed $record_type
+     * @param mixed $recordType
      */
-    public function setRecordType($record_type) {
-        $this->record_type = $record_type;
+    public function setRecordType($recordType) {
+        $this->recordType = $recordType;
     }
 
     /**
@@ -78,42 +78,42 @@ class Record {
      * @return mixed
      */
     public function getDateEntered() {
-        return $this->date_entered;
+        return $this->dateEntered;
     }
 
     /**
-     * @param mixed $date_entered
+     * @param mixed $dateEntered
      */
-    public function setDateEntered($date_entered) {
-        $this->date_entered = $date_entered;
+    public function setDateEntered($dateEntered) {
+        $this->dateEntered = $dateEntered;
     }
 
     /**
      * @return mixed
      */
     public function getEnteredBy() {
-        return $this->entered_by;
+        return $this->enteredBy;
     }
 
     /**
-     * @param mixed $entered_by
+     * @param mixed $enteredBy
      */
-    public function setEnteredBy($entered_by) {
-        $this->entered_by = $entered_by;
+    public function setEnteredBy($enteredBy) {
+        $this->enteredBy = $enteredBy;
     }
 
     /**
      * @return mixed
      */
     public function getDeceasedId() {
-        return $this->deceased_id;
+        return $this->deceasedId;
     }
 
     /**
-     * @param mixed $deceased_id
+     * @param mixed $deceasedId
      */
-    public function setDeceasedId($deceased_id) {
-        $this->deceased_id = $deceased_id;
+    public function setDeceasedId($deceasedId) {
+        $this->deceasedId = $deceasedId;
     }
 
 }

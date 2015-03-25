@@ -8,36 +8,36 @@
  */
 class Link {
 
-    private $link_id,
+    private $linkId,
         $url,
-        $link_to,
-        $information_id;
+        $linkTo,
+        $informationId;
 
     /**
-     * @param $link_id
+     * @param $linkId
      * @param $url
-     * @param $link_to
-     * @param $information_id
+     * @param $linkTo
+     * @param $informationId
      */
-    function __construct($link_id, $url, $link_to, $information_id) {
-        $this->link_id = $link_id;
+    function __construct($linkId, $url, $linkTo, $informationId) {
+        $this->linkId = $linkId;
         $this->url = $url;
-        $this->link_to = $link_to;
-        $this->information_id = $information_id;
+        $this->linkTo = $linkTo;
+        $this->informationId = $informationId;
     }
 
     /**
      * @return mixed
      */
     public function getLinkId() {
-        return $this->link_id;
+        return $this->linkId;
     }
 
     /**
-     * @param mixed $link_id
+     * @param mixed $linkId
      */
-    public function setLinkId($link_id) {
-        $this->link_id = $link_id;
+    public function setLinkId($linkId) {
+        $this->linkId = $linkId;
     }
 
     /**
@@ -58,28 +58,28 @@ class Link {
      * @return mixed
      */
     public function getLinkTo() {
-        return $this->link_to;
+        return $this->linkTo;
     }
 
     /**
-     * @param mixed $link_to
+     * @param mixed $linkTo
      */
-    public function setLinkTo($link_to) {
-        $this->link_to = $link_to;
+    public function setLinkTo($linkTo) {
+        $this->linkTo = $linkTo;
     }
 
     /**
      * @return mixed
      */
     public function getInformationId() {
-        return $this->information_id;
+        return $this->informationId;
     }
 
     /**
-     * @param mixed $information_id
+     * @param mixed $informationId
      */
-    public function setInformationId($information_id) {
-        $this->information_id = $information_id;
+    public function setInformationId($informationId) {
+        $this->informationId = $informationId;
     }
 
 }

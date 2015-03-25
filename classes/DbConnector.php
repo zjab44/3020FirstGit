@@ -1,4 +1,4 @@
-<?php // ----- THIS FILE IS NOT FUNCTIONING - DO NOT USE ----- //
+<?php
 
 /**
  * Created by PhpStorm.
@@ -8,31 +8,32 @@
  */
 class DbConnector {
 
-    private $conn;
-
-    /**
-     * @param $conn
-     */
-    function __construct($conn) {
-        $this->conn = $conn || null;
-    }
-
-    /**
-     * @param $conn
-     */
-    public function setDb($conn) {
-        $this->$conn = $conn;
-    }
+    private $conn = null;
+    private $e = null;
 
     /**
      *
      */
-    public function useDefaultDb() {
-        $conn = oci_connect('GREENTEAM', 'teamgreen', 'pythia.etsu.edu:1521/CSDB');
-        if (!$conn) {
-            $e = oci_error();
-            trigger_error(htmlentities($e['could not connect'], ENT_QUOTES), E_USER_ERROR);
+    public function __construct() {
+        $this->conn = oci_connect('GREENTEAM', 'teamgreen', 'pythia.etsu.edu:1521/CSDB');
+        if (!$this->conn) {
+            $this->e = oci_error();
+            trigger_error(htmlentities($this->e['could not connect'], ENT_QUOTES), E_USER_ERROR);
         }
+    }
+
+    /**
+     * @return null|resource
+     */
+    public function getConn(){
+        return $this->conn;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getError(){
+        return $this->e;
     }
 
 }

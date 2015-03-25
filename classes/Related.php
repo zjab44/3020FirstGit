@@ -8,18 +8,18 @@
  */
 class Related {
 
-    private $deceased_id,
-        $deceased_relative_id,
+    private $deceasedId,
+        $deceasedRelativeId,
         $relationship;
 
     /**
-     * @param $deceased_id
-     * @param $deceased_relative_id
+     * @param $deceasedId
+     * @param $deceasedRelativeId
      * @param $relationship
      */
-    function __construct($deceased_id, $deceased_relative_id, $relationship) {
-        $this->deceased_id = $deceased_id;
-        $this->deceased_relative_id = $deceased_relative_id;
+    function __construct($deceasedId, $deceasedRelativeId, $relationship) {
+        $this->deceasedId = $deceasedId;
+        $this->deceasedRelativeId = $deceasedRelativeId;
         $this->relationship = $relationship;
     }
 
@@ -27,28 +27,28 @@ class Related {
      * @return mixed
      */
     public function getDeceasedId() {
-        return $this->deceased_id;
+        return $this->deceasedId;
     }
 
     /**
-     * @param mixed $deceased_id
+     * @param mixed $deceasedId
      */
-    public function setDeceasedId($deceased_id) {
-        $this->deceased_id = $deceased_id;
+    public function setDeceasedId($deceasedId) {
+        $this->deceasedId = $deceasedId;
     }
 
     /**
      * @return mixed
      */
     public function getDeceasedRelativeId() {
-        return $this->deceased_relative_id;
+        return $this->deceasedRelativeId;
     }
 
     /**
-     * @param mixed $deceased_relative_id
+     * @param mixed $deceasedRelativeId
      */
-    public function setDeceasedRelativeId($deceased_relative_id) {
-        $this->deceased_relative_id = $deceased_relative_id;
+    public function setDeceasedRelativeId($deceasedRelativeId) {
+        $this->deceasedRelativeId = $deceasedRelativeId;
     }
 
     /**
